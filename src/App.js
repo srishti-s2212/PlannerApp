@@ -1,22 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { Icon } from '@fluentui/react/lib/Icon';
+import userphoto from './userphoto.png';
+;
+const username = "Srishti Sharma"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Icon
+          className="logo-icon"
+          iconName="TaskManager"
+        />
+
+        <img
+          className="user-photo"
+          src={userphoto} width="60" height="60" alt="logo"
+        />
+
+        <h1 className="title">My Tasks</h1>
+        <h2 className="subtitle">My Tasks</h2>
+
+        <p className="para" > Logged in user is {username}</p>
+
       </header>
     </div>
   );
